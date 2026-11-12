@@ -1,0 +1,23 @@
+{
+  "name": "@kleos/kit",
+  "version": "0.1.0",
+  "description": "Code shared by the Kleos apps, shipped as TypeScript source.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "bun@1.3.8",
+  "exports": {
+    "./doku": "./src/doku/index.ts"
+  },
+  "files": [
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "scripts": {
+    "test": "bun test src",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "bun-types": "^1.3.10",
+    "typescript": "^5.9.3"
+  }
+}
